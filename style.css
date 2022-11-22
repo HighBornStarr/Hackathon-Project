@@ -4,3 +4,9 @@
     width: 20%
   }
 }
+
+body::before {
+  display: block;
+  content: '';
+  height: 150px;
+}
