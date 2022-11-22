@@ -1,0 +1,6 @@
+/* Insert Media query and set medium screen breakpoint at 768px to 50% width*/
+@media(min-width: 768px) {
+  .news-input {
+    width: 20%
+  }
+}
