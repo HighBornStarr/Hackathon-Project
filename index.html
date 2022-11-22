@@ -13,7 +13,7 @@
  
   <body>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
       <div class="container">
         <a href="#" class="navbar-brand">Alex's Web Academy</a>
 <button 
@@ -46,25 +46,48 @@ data-bs-target="#navmenu">  <!--Target navmenu div id with button-->
   <!--Showcase-->
 
   <!--add css like attributes to section of webpage/ background dark,text light, padding all around p-5, set text to center-->
-<section class="bg-dark text-light p-5 text-center">
+<section class="bg-dark text-light p-5 p-lg-0 text-center">
 
 <!--Add div container inside section-->
   <div class="container">
-  </div class="d-flex"> <!--d-flex uses flex on all screen sizes-->
-  <div>
+  </div class="d-sm-flex"> <!--d-flex uses flex on all screen sizes-->
+  
     <!--Add span class utilize "text-warning" to default color text yellow-->
     <h1>Become a <span class="text-warning"> Web Developer
   </span></h1>
   <!--Add P tag-->
-  <p>
+  <p class="lead"> <!--Lead Class alters text size bigger-->
   Our core focus here is teaching the fundamentals of the latest and greatest technologies to prepare our students for the future dev. role.
   </p>
+  <!--Add button-->
+  <button class="btn btn-primary btn-lg">Enroll Student</button>
   </div>
 <!--Utilize img class attributes-->
-  <img class= "img-fluid w-25"src="img/Tech.jpg" alt="">
+  <img class= "img-fluid w-50"src="img/Tech.jpg" alt="">
   
   </div>
   </div>
+</section>
+
+<!--NewsLetter Section 2 -->
+<section class="bg-primary text-light p-5">
+<div class="container">
+  <!--Create h3 tag for Newsletter sign up feature-->
+<div class="d-md-flex justify-content-between align-items-center">
+  <h3 class="mb-3 mb-md-0">Sign up for our Newsletter</h3>
+<!--Use code from Forms InputGroup on bootstrap for class/input username box-->
+<div class="input-group">
+  <input type="text" 
+  class="form-control" 
+  placeholder="Enter Email Address Here" 
+  >
+  <!--Make button color dark/black-->
+  <button class="btn btn-dark" 
+  type="button" 
+  id="button-addon2">Button</button>
+</div>
+</div>
+
 </section>
 
   
