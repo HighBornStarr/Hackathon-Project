@@ -1,7 +1,8 @@
-var nav = document.getElementById('navbar'),
-    body = document.body;
-
-nav.addEventListener('click', function(e) {
-    body.className = body.className? '' : 'with_nav';
-    e.preventDefault();
-});
+$.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+    }
+  });
+  $.ajax()
